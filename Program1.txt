@@ -1,0 +1,51 @@
+1. split the list in two sub lists odd_list & even_list 
+    
+    move all odd numbers into odd_list and even numbers into even_list
+    
+    Input : [1,2,3,4,5,6,7,8,9,10, 15, 16, ] 
+    
+    odd_list: [1,3,5,7,9,15]
+    
+    even_list = [2,4,6,8,10,16]
+    
+2. filter the list with numbers divisable by 3 and 5
+    
+    Input : [1,2,3,4,5,6,7,8,9,10, 15, 16,30 ] 
+    
+    output: [15,30]
+    
+3. Now filter only divisable by but not divisable by 5
+    
+    Input : [1,2,3,4,5,6,7,8,9,10, 15, 16, 18, 20] 
+    
+    output: [3,6,9,12,18]
+
+---------------
+a = [1,2,3,4,5,6,7,8,9]
+enum = []
+onum = []
+
+for i in a:
+    if i%2==0:
+        enum.append(i)
+    else:
+        onum.append(i)
+print("evennumber:", enum)
+print("oddnumber:", onum)
+--------------------------
+a = [1,2,3,4,5,6,7,8,9,10,15,16,30 ]
+three_num = []
+five_num = []
+diff_num = []
+
+for i in a:
+    if i%3==0:
+        three_num.append(i)
+    elif i%5==0:
+        five_num.append(i)
+    else:
+        diff_num.append(i)
+print("div by three:", three_num)
+print("div by five:", five_num)
+print("div by othernumbers:", diff_num)
+---------------------------------------------
